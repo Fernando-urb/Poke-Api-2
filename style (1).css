@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffcc00, #ff4444);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px #000;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.search-box {
+  margin: 2rem 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-box input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #333;
+}
+
+.search-box button {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #ff4444;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-box button:hover {
+  background: #cc0000;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 300px;
+  margin-bottom: 2rem;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+}
+
+.card h2 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+.card .types {
+  margin: 0.5rem 0;
+}
+
+.type {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  margin: 0 0.2rem;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.stats {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+button.add-fav {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #4CAF50;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.add-fav:hover {
+  background: #388E3C;
+}
+
+.favorites {
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.favorites h2 {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px #000;
+  margin-bottom: 1rem;
+}
+
+.favorites-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.favorite-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.favorite-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.favorite-card button {
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  background: #e53935;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.favorite-card button:hover {
+  background: #b71c1c;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  color: white;
+  font-size: 0.9rem;
+}
+

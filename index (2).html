@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex con Favoritos</title>
+  <link rel="stylesheet" href="./style (1).css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <header>
+    <h1>Pokédex</h1>
+    <p>Busca tu Pokémon favorito y guárdalo en favoritos</p>
+  </header>
+
+  <main>
+    <div class="search-box">
+      <input type="text" id="pokemonInput" placeholder="Ejemplo: charizard">
+      <button id="searchBtn">Buscar</button>
+    </div>
+
+    <div id="pokemonCard" class="card hidden"></div>
+
+    <section class="favorites">
+      <h2>Favoritos</h2>
+      <div id="favoritesList" class="favorites-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con ❤️ usando la <a href="https://pokeapi.co/" target="_blank">PokeAPI</a></p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
